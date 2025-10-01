@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Elite MMA Coaching</title>
+    <style>
+        /*Reset*/
+        * {
+            margin: 0; /*removes any browser default margin settings*/
+            padding: 0; /*removes any browser default padding settings*/
+            box-sizing: border-box; /*Sets width and height of box to include the padding and border */
+        }
+        body {
+            font-family: Arial, sans-serif; /* Use Arial font, or sans-serif as backup */
+            line-height: 1.6; /* Space between lines of text */
+            color: rgb(10, 10, 10);
+            background-color: rgb(240, 240, 248); 
+        }
+        /* Header Styles */
+        .header {
+            background-color: rgb(25,25,35);
+            color: gold; 
+            padding: 1rem 0; 
+        }
+
+        /* Logo Styles */
+        .logo h1 {
+            font-size: 1.8rem; /* Larger font for logo */
+            text-align: center; /* Center the logo text */
+            margin-bottom: 0.5rem; /* Space below logo */
+        }
+
+        /* Navigation Styles */
+        .nav {
+            text-align: center; /* Center the navigation links */
+        }
+
+            .nav a {
+                color: white; /* White link text */
+                text-decoration: none; /* Remove underline from links */
+                margin: 0 1rem; /* Space between links */
+                font-weight: bold; /* Make links bold */
+                padding: 0.5rem 1rem; /* Padding inside links for clickable area */
+                border-radius: 4px; /* Slightly rounded corners */
+                transition: background-color 0.3s; /* Smooth color change on hover */
+            }
+
+                .nav a:hover {
+                    background-color: #555; /* Dark gray background on hover */
+                }
+        /* Main Content Styles */
+        .main-content {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        /* Intro Section */
+        .intro {
+            background: linear-gradient(135deg, #1a1a2e, #16213e); /* Dark blue gradient */
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center; /* Center the text */
+            border-radius: 8px; /* Rounded corners */
+            margin-bottom: 2rem; /* Space below intro */
+        }
+            .intro h2 {
+                font-size: 2.5rem; /* Large heading */
+                margin-bottom: 1rem; /* Space below heading */
+            }
+
+            .intro p {
+                font-size: 1.2rem;
+                margin-bottom: 1.5rem; /* Space below paragraph */
+            }
+        /* Services Section */
+        .services {
+            background-color: white; /* White background for contrast */
+            padding: 2rem; /* Padding inside services */
+            border-radius: 8px; /* Rounded corners */
+            margin-bottom: 2rem; /* Space below services */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Subtle shadow */
+        }
+            .services h2 {
+                color: #1a1a2e; /* Dark blue heading */
+                margin-bottom: 1rem; /* Space below heading */
+                text-align: center; /* Center the heading */
+            }
+            .services > p {
+                text-align: center; /* Center the description */
+                margin-bottom: 2rem; /* Space below description */
+                font-size: 1.1rem; /* Slightly larger text */
+            }
+        /* Individual Program Styles */
+        .program {
+            background-color: #f8f9fa; 
+            padding: 1.5rem; 
+            margin-bottom: 1.5rem; 
+            border-radius: 6px; 
+            border: 4px solid gold; 
+        }
+            .program h4 {
+                color: #1a1a2e; /* Dark blue heading */
+                margin-bottom: 0.5rem; /* Space below heading */
+            }
+
+            .program p {
+                margin-bottom: 0.5rem; /* Space between paragraphs */
+            }
+        /* Schedule Table Styles */
+        .schedule {
+            background-color: white; 
+            padding: 2rem;
+            border-radius: 8px; 
+            margin-bottom: 2rem; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        }
+
+            .schedule h2 {
+                color: #1a1a2e;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+        .schedule-table {
+            width: 100%; /* Full width table */
+            border-collapse: collapse; /* Remove space between borders */
+            margin-top: 1rem; /* Space above table */
+        }
+
+            .schedule-table th,
+            .schedule-table td {
+                padding: 0.75rem; /* Padding inside cells */
+                text-align: center; /* Center text in cells */
+                border: 1px solid #ddd; /* Light gray borders */
+            }
+
+            .schedule-table th {
+                background-color: #1a1a2e; /* Dark blue header */
+                color: gold; 
+                font-weight: bold; 
+            }
+
+            .schedule-table tr:nth-child(even) {
+                background-color: #f8f9fa; /* Light gray for even rows */
+            }
+        /* Training Philosophy Section */
+        .philosophy {
+            background-color: white; /* White background */
+            padding: 2rem; /* Padding inside */
+            border-radius: 8px; /* Rounded corners */
+            margin-bottom: 2rem; /* Space below */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Subtle shadow */
+        }
+
+            .philosophy h2 {
+                color: #1a1a2e; /* Dark blue heading */
+                margin-bottom: 1rem; /* Space below heading */
+                text-align: center; /* Center the heading */
+            }
+
+            .philosophy p {
+                margin-bottom: 1rem; /* Space between paragraphs */
+                text-align: justify; /* Even text alignment */
+            }
+
+        /* Footer Styles */
+        .footer {
+            background-color: rgb(25,25,35); /* Dark background matching header */
+            color: gold; /* Gold text matching header */
+            text-align: center; /* Center the text */
+            padding: 1.5rem; /* Padding inside footer */
+            margin-top: 2rem; /* Space above footer */
+        }
+
+            .footer p {
+                margin: 0; /* Remove default paragraph margins */
+            }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="logo">
+            <h1>Elite MMA Coaching</h1>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <!-- Intro Section -->
+        <div class="intro">
+            <h2>Master Mixed Martial Arts</h2>
+            <p>Transform Your Fighting Game with Professional Coaching</p>
+        </div>
+
+        <!-- Services Section -->
+        <div class="services">
+            <h2>Our Training Programs</h2>
+            <p>We offer specialized classes to build complete MMA fighters through focused, systematic training.</p>
+
+            <div class="program">
+                <h4>Striking Classes</h4>
+                <p>Master the art of long-range combat through disciplined, progressive training.</p>
+                <p>Beginner Striking | Earn fundamental techniques including basic punches, kicks, knees, and elbows. Build proper form, footwork, and defensive fundamentals in a supportive environment.</p>
+                <p>Advanced Striking | Develop complex combinations, advanced defensive techniques, counter-attacking strategies, and fight IQ for competitive situations.</p>
+
+                <h4>Grappling Classes</h4>
+                <p>Excel in close-range combat and ground fighting through technical mastery.</p>
+                <p>Beginner Grappling | Learn essential takedowns, basic submissions, positional control, and escape fundamentals. Perfect for building a strong grappling foundation.</p>
+                <p>Advanced Grappling | Master complex submission chains, advanced transitions, wrestling combinations, and competition-level grappling strategies.</p>
+
+                <h4>MMA Integration Sessions</h4>
+                <p>Beginner MMA | Learn to connect striking and grappling through structured drills and situational sparring. Develop confidence with transitions, takedown entries, and controlled ground striking in a safe environment.</p>
+                <p>Advanced MMA | Push your skills further with complex drills, situational work, and full sparring. Focus on fluid combinations between striking and grappling, cage control, and competition-level strategies.</p>
+            </div>
+        </div>
+        <!-- Class Schedule Section -->
+        <div class="schedule">
+            <h2>Class Schedule</h2>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Class</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beginner (8-10 PM)</td>
+                        <td>Striking</td>
+                        <td>Grappling</td>
+                        <td>MMA</td>
+                        <td>Striking</td>
+                        <td>Grappling</td>
+                        <td>MMA</td>
+                        <td>Day off!</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced (5-7 PM)</td>
+                        <td>Striking</td>
+                        <td>Grappling</td>
+                        <td>MMA</td>
+                        <td>Striking</td>
+                        <td>Grappling</td>
+                        <td>MMA</td>
+                        <td>Day off!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Training Philosophy Section -->
+        <div class="philosophy">
+            <h2>Our Training Philosophy</h2>
+            <p>We believe in teaching striking and grappling as separate disciplines initially to prevent cognitive overload and ensure technical mastery. This focused approach allows students to develop proper muscle memory and deep understanding of each art before integrating them into complete MMA proficiency.</p>
+            <p>By mastering individual components first, fighters build stronger foundations and develop more effective integrated skills when they begin combining techniques in our MMA sessions.</p>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Elite MMA Coaching. All rights reserved.</p>
+    </div>
+</body>
+</html>
