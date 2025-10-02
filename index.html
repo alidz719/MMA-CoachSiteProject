@@ -202,13 +202,20 @@
             .main-content {
                 padding: 1rem;
             }
-            /* Add this inside the same @media block */
+
+            /* Schedule table mobile fix */
             .schedule-table {
                 display: block;
                 overflow-x: auto;
                 white-space: nowrap;
                 font-size: 0.9rem;
             }
+
+                .schedule-table th,
+                .schedule-table td {
+                    padding: 0.5rem 0.3rem;
+                    min-width: 80px;
+                }
 
             .intro h2 {
                 font-size: 1.8rem;
@@ -217,6 +224,16 @@
             .intro p {
                 font-size: 1rem;
             }
+
+            /* Make program sections more compact */
+            .program {
+                padding: 1rem;
+            }
+
+            .services, .schedule, .philosophy {
+                padding: 1.5rem;
+            }
+        }
         }
     </style>
 </head>
