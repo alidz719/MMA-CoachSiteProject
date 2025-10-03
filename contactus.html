@@ -239,5 +239,19 @@
     <div class="footer">
         <p>&copy; 2024 Elite MMA Coaching. All rights reserved.</p>
     </div>
+    <script>
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Stops the page from refreshing
+
+    // Show confirmation message
+    alert('Thank you for your message! We will contact you soon.');
+
+    // Clear all form fields
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('interest').value = '';
+    document.getElementById('message').value = '';
+});
+    </script>
 </body>
 </html>
